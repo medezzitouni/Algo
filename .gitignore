@@ -2,3 +2,4 @@
 
 Typescript/*.js
 
+**/node_modules
