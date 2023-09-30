@@ -1,10 +1,16 @@
 # Data Structure In Typescript
 
-### Run tests
+### Run tests with Jest
 ```bash
-npm run test
-npm run test-watch
-npm run test-coverage
+npm run jest-test
+npm run jest-test-watch
+npm run jest-test-coverage
+```
+
+### Run tests with Mocha
+```bash
+npm run mocha-test
+npm run mocha-test-watch
 ```
 
 ## References
@@ -15,7 +21,7 @@ npm run test-coverage
  - [X] LinkedList
  - [X] Stacks
  - [X] Queues
- - [ ] Hash Tables
+ - [X] Hash Tables
  - [X] Trees
         - [X] Binary Trees
             - [X] Depth Traversal
