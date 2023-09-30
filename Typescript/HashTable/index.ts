@@ -45,7 +45,7 @@ export class HashTable {
   private hash(str: any) {
     str = String(str);
     let index = 0;
-    for (let i = 0; i < str.length; i++) index += str.charCodeAt(i); //* (i + 1);
+    for (let i = 0; i < str.length; i++) index += str.charCodeAt(i); // I can do index += str.charCodeAt(i) * (i + 1); to make it more reliable
     return this._capacity ? index % this._capacity : index;
   }
   // @override

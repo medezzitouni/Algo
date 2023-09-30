@@ -9,7 +9,7 @@
     "jest-test": "jest",
     "jest-test-watch": "jest --watch ",
     "test-coverage": "jest --coverage",
-    "data-structure-start": "npx ts-node src/main.ts"
+    "data-structure-start": "npx ts-node ./DataStructure/main.ts"
   },
   "keywords": [],
   "author": "",
