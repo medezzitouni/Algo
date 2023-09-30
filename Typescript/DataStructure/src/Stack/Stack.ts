@@ -16,7 +16,7 @@ export default class Stack<T> {
     this._list = new LinkedList(node);
   }
 
-  get list(){
+  get list() {
     return this._list;
   }
   /**

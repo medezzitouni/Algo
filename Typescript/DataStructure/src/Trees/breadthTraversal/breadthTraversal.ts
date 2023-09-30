@@ -1,12 +1,6 @@
-import { Node } from "../LinkedList";
-import Queue from '../Queue';
-
-
-export type BinaryNode<T> = {
-    val: T;
-    left: BinaryNode<T>;
-    right: BinaryNode<T>
-} | null
+import { Node } from "../../LinkedList";
+import Queue from '../../Queue';
+import { BinaryNode } from "../BinaryNode";
 
 export function breadthTraversal<T>(tree: BinaryNode<T>, path: Array<T>) {
     const q = new Queue(new Node(tree))

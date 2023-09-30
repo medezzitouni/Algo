@@ -1,8 +1,4 @@
-export type BinaryNode<T> = {
-    val: T;
-    left: BinaryNode<T>;
-    right: BinaryNode<T>
-} | null
+import { BinaryNode } from "../BinaryNode";
 
 export function preOrderTraversal<T>(tree: BinaryNode<T>, path: Array<T>) {
 
@@ -14,8 +10,6 @@ export function preOrderTraversal<T>(tree: BinaryNode<T>, path: Array<T>) {
 
     return path;
 }
-
-
 
 export function inOrderTraversal<T>(tree: BinaryNode<T>, path: Array<T>) {
 
@@ -38,3 +32,4 @@ export function postOrderTraversal<T>(tree: BinaryNode<T>, path: Array<T>) {
 
     return path;
 }
+

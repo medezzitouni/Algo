@@ -7,7 +7,7 @@ npm run test-watch
 npm run test-coverage
 ```
 
-## References 
+## References
 - Introduction to Algorithms, Third Edition By Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest and Clifford Stein.
 - [Wikipedia](https://en.wikipedia.org/wiki/List_of_data_structures)
 - [Sketch](https://okso.app/showcase/data-structures)
@@ -20,10 +20,15 @@ npm run test-coverage
         - [X] Binary Trees
             - [X] Depth Traversal
                   - [X] Recursive implementation
-                  - [ ] implementation With Stack
+                  - [X] implementation With Stack
+                        - [ ] postOrderTraversalWithSatck
             - [X] Breadth Traversal
                   - [X] implementation With Queue
         - Binary Search Trees
+            - [ ] Insert
+            - [ ] Search
+            - [ ] Delete
+            - [ ] Balance a Tree (methods: AVL, Red-Black Tree)
         - Heaps
         - Treaps
   - [ ] Graphs
