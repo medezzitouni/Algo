@@ -1,2 +1,2 @@
-# algo
-algorithms in Java, Python, Javascript, and Typescript 
+# Algo & Data Structues
+algorithms and data structures in Typescript, Java, Python, and C++
