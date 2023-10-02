@@ -31,9 +31,9 @@ npm run mocha-test-watch
             - [X] Breadth Traversal
                   - [X] implementation With Queue
         - Binary Search Trees
-            - [ ] Insert
-            - [ ] Search
-            - [ ] Delete
+            - [X] Insert
+            - [X] Search
+            - [X] Delete
             - [ ] Balance a Tree (methods: AVL, Red-Black Tree)
         - Heaps
         - Treaps
