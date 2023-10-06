@@ -23,22 +23,42 @@ npm run mocha-test-watch
  - [X] Queues
  - [X] Hash Tables
  - [X] Trees
-        - [X] Binary Trees
-            - [X] Depth Traversal
-                  - [X] Recursive implementation
-                  - [X] implementation With Stack
-                        - [ ] postOrderTraversalWithSatck
-            - [X] Breadth Traversal
-                  - [X] implementation With Queue
-        - Binary Search Trees
-            - [X] Insert
-            - [X] Search
-            - [X] Delete
-            - [ ] Balance a Tree (methods: AVL, Red-Black Tree)
-        - Heaps
-        - Treaps
+      ### Binary Trees
+      - [X] Depth Traversal (Recursive implementation, or implementation With Stack)
+      - [X] Breadth Traversal (implementation With Queue)
+      ### Binary Search Trees
+      - [X] Insert
+      - [X] Search
+      - [X] Delete
+      - [ ] Balance a Tree (methods: [AVL](https://www.geeksforgeeks.org/insertion-in-an-avl-tree/), or [Red-Black Tree](https://www.geeksforgeeks.org/introduction-to-red-black-tree/))
+      ### Heaps (priority queue)
+      - [X] Heap Insert
+      - [X] Heap Delete
+
+      ***Heap Definition***
+      ```
+      Heap is a binary tree where every child and grand child is smaller (MaxHeap), or larger (MinHeap) than the current node.
+       • Whenever a node is added, we must adjust the tree
+       • Whenever a node is deleted, we must adjust the tree
+       • There is no traversing the tree (whiteboard)
+      ```
+      ### Treaps
+
+      [***Treaps Definition***](https://www.geeksforgeeks.org/treap-a-randomized-binary-search-tree/)
+      ```
+      Like Red-Black and AVL Trees, Treap is a Balanced Binary Search Tree, but not guaranteed to have height as O(Log n). The idea is to use Randomization and Binary Heap property to maintain balance with high probability. The expected time complexity of search, insert and delete is O(Log n).
+      ```
+      ### Trie Tree
+      ***Heap Definition***
+      
+      Named after Re-***trie***-val Tree, people call them try trees / prefix / digital tree
+      [Implementation](https://github.com/trekhleb/javascript-algorithms/blob/master/src/data-structures/trie/Trie.js)
   - [ ] Graphs
-        - Directed Graphs
-        - Undirected Graphs
+      ### Terminology
+      - cycle
+      - acyclic graph
+      
+      - [ ] Directed Graphs
+      - [ ] Undirected Graphs
 
 

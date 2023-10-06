@@ -4,11 +4,12 @@ import { BinaryNode } from "./BinaryNode";
 import { breadthTraversal } from './breadthTraversal/breadthTraversal';
 import { inOrderTraversal, postOrderTraversal, preOrderTraversal } from "./depthTraversal/depthTraversal";
 import { inOrderTraversalWithStack, preOrderTraversalWithStack } from "./depthTraversal/depthTraversalWithStack";
-
+import { insert as heapInsert, remove as heapRemove } from './heaps';
 describe("Trees", () => {
     let root: BinaryNode<number>;
     let root2: BinaryNode<number>;
     let BST: BinaryNode<number>;
+    let heap: number[];
 
     beforeEach(() => {
         root = {
@@ -107,6 +108,7 @@ describe("Trees", () => {
                 },
             },
         };
+        heap = [10, 50, 100,]
     })
     test("preOrderTraversal", () => {
         const path: number[] = [2, 3, 6, 5, 7]
@@ -150,7 +152,6 @@ describe("Trees", () => {
         expect(compareTrees<number>(root, root2)).toEqual(false);
     });
 
-
     test("search for an element in a BST", () => {
         expect(search(BST, 8)).toEqual(expect.objectContaining({
             val: 8
@@ -159,7 +160,7 @@ describe("Trees", () => {
         expect(search(BST, 16)).toEqual(false);
     });
 
-    test.only("search for an element in a BST", () => {
+    test("search for an element in a BST", () => {
         expect(insert(BST, 16)).toEqual(true);
         console.log(JSON.stringify(BST, null, 2));
     });
@@ -178,5 +179,24 @@ describe("Trees", () => {
         console.log(JSON.stringify(BST, null, 2));
 
         expect(remove(BST, 16, BST)).toEqual(false);
+    });
+
+    test.only("MinHeap: insert", () => {
+        expect(heapInsert(heap, 5)).toBe(0);
+        expect(heapInsert(heap, 60)).toBe(heap.length - 1);
+        expect(heapInsert(heap, 55)).toBe(2);
+        expect(heapInsert(heap, 100)).toBe(heap.length - 1);
+
+    });
+
+    test.only("MinHeap: remove", () => {
+        heapInsert(heap, 5);
+        heapInsert(heap, 50);
+        heapInsert(heap, 100);
+        heapInsert(heap, 55);
+
+        // in a MinHeap we remove the smallest value (the head)
+        expect(heapRemove(heap)).toBe(3);
+        expect(heap).toEqual([10, 50, 55, 100, 50, 100]);
     });
 });
