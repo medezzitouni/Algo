@@ -34,6 +34,7 @@ npm run mocha-test-watch
       ### Heaps (priority queue)
       - [X] Heap Insert
       - [X] Heap Delete
+      - [ ] Heap Update
 
       ***Heap Definition***
       ```

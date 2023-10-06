@@ -55,3 +55,8 @@ export function remove<T>(heap: T[]): number {
 
     return i;
 }
+
+
+/**
+ * impelement update function
+ */
